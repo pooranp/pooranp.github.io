@@ -105,6 +105,9 @@ nav a:hover {
 
 #facepic {
   display: inline-block;
+  float: right;
+  margin: 0px 100px;
+  border-radius: 60px;
 }
 
 #projects {
