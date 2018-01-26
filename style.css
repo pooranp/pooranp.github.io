@@ -119,8 +119,9 @@ nav a:hover {
 }
 
 .projplaceholder {
-  margin: 0px 10px;
-  width: 400px;
+  float: left;
+  width: 40%;
+  margin: 0px 5%;
   padding: 30px;
 }
 
