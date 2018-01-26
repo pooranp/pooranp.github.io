@@ -1,0 +1,170 @@
+/*---element selectors---*/
+
+body {
+  background-image: url("https://wallpaperscraft.com/image/stars_night_sky_113967_1370x640.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: 'Questrial', sans-serif;
+}
+
+header {
+  height: 300px;
+  text-align: center;
+  margin-bottom: 300px;
+}
+
+h1 {
+  padding: 180px 40px 100px;
+  font-size: 50px;
+  color: white;
+}
+
+h3 {
+  padding: 40px 0px 20px;
+  margin: 180px 0px 50px;
+  font-weight: bold;
+}
+
+p {
+  padding: 10px;
+  width: 75%;
+  margin: auto;
+  text-align: justify;
+  font-size: 23px;
+  line-height: 2;
+}
+
+img {
+  max-width: 100%;
+}
+
+#navbar {
+    display: inline;
+    width: 100%;
+    margin: 0px;
+    text-decoration: none;
+}
+
+#fluentskills {
+  text-align: center;
+  display: inline;
+    width: 75%;
+}
+
+#familiarskills{
+  background-color: yellow;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0% 5%;
+  width: 20%;
+}
+
+a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0% 10%;
+    display: inline;
+}
+
+nav a:hover {
+  background-color: #;
+  color: rgba(255, 255, 255);
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: 1px;
+}
+
+/*---id selectors---*/
+
+#main-footer {
+  color: white;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+#backToTop.sticky {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+#about {
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+  padding-bottom: 40px;
+}
+
+#facepic {
+  display: inline-block;
+}
+
+#projects {
+  margin: auto;
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+  padding-bottom: 40px;
+}
+
+.projplaceholder {
+  margin: 0px 10px;
+  width: 400px;
+  padding: 30px;
+}
+
+.projplaceholder:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+figcaption {
+  float: center;
+  align: center;
+}
+
+#skills {
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+  padding-bottom: 40px;
+}
+
+#contact {
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+  padding-bottom: 40px;
+}
+
+/*---pseudo-class selectors---*/
+
+a:link {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+a:visited {
+  color: white;
+}
+
+#upBtn {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    border: none;
+    outline: none; 
+    background: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+}
+
+/*---class selectors---*/
