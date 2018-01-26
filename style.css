@@ -105,12 +105,13 @@ nav a:hover {
   text-align: center;
   background-color: rgba(0,0,0,0.3);
   padding-bottom: 40px;
+  overflow: auto;
 }
 
 #facepic {
   display: inline-block;
+  height: 350px;
   float: right;
-  height: 250px;
   margin: 0px 100px;
   border-radius: 50px;
 }
