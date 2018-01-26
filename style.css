@@ -16,6 +16,10 @@ header {
   margin-bottom: 300px;
 }
 
+section {
+  width: 100%;
+}
+
 h1 {
   padding: 180px 40px 100px;
   font-size: 50px;
