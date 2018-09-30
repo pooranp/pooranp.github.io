@@ -1,65 +1,178 @@
-<html>
-  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-  <link rel='stylesheet' href='style.css'>
-  
-  <head>
-    <title>My Portfolio</title>
-  </head>
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pooran Patel</title>
+	<!-- link to Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- link to external CSS -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#menu">
+	
+<!-- Start Home Section -->
+	<div id="home">
+		<!-- Navigation -->
+		<div class="container-fluid">
+		<nav class="navbar navbar-expand-md transparent navbar-dark fixed-top">
+			<div class="container-fluid">
+				<!-- navbar brand -->
+<!-- 				<a class="navbar-brand" href="#">
+					<h1 class="display-1 navbar-brand">Pooran Patel</h1> -->
+				</a> <!-- End navbar brand -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#skills">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#portfolio">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+				</div>				
+		</nav> <!-- End navbar -->
+		</div> <!-- End container-fluid -->
+		<!-- Start Landing Page -->
+		<div class="landing">
+			<div class="home-wrap">
+				<div class="home-inner">
+				</div>
+			</div>
+		</div>
+				
+		<!-- Start Landing Page Caption -->
+		<div class="caption center-block text-center">
+			<h3 class="display-1"><span id="line1">Hi, my name is<br><strong>Pooran</strong>,</span><span id="line2"> <br>and I am a<br><strong>Front-End Web Developer.</strong></span></h3>
+			<a class="btn btn-outline-light downBtn" href="#about" title="Continue">&#8595;</a>
+		</div>	
+	 <button id="homeBtn" title="Go to top">&#8593;&#8593;</button> 
+			</div>
+	</div><!-- End Home Section -->
+	
+<!-- Start About Section -->
+	<div id="about" class="">
+		<h3 class="heading">Who am I?</h3>
+		<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 text-center text" id="about-text">
+				<p>An ambitious problem solver with a passion for online businesses, and would like to join a team of like-minded developers. Karen has much experience of creating logical and innovative solutions to complex problems. She is thorough and precise in everything she does, and has a keen interest in technology, mobile applications and user experience. As someone who takes responsibility for her own personal development, she is continually evaluating and upgrading her skills so that she stays at the cutting edge of web development. She is a natural problem solver, who has proven herself by successfully completing projects for IT consultancies, software houses, web design agencies, and IT departments.</p>
+			</div>
+			<div class="col-md-4 d-sm-none d-md-block" id="portrait-img">
+          <img id="portrait-img" class="img-fluid" src="https://i.postimg.cc/9MfD84JX/portrait.jpg">
+        </div>
+		</div> <!-- End row -->
+		</div> <!-- End container -->
+	</div> <!-- End About Section -->
 
-   <body>
-    <header>
-      <h1>POORAN PATEL</h1>
-       <nav>
-        <div id="navbar">
-         <a href="#about">ABOUT ME</a>
-         <a href="#skills">SKILLS</a>
-         <a href="#projects">PROJECTS</a>
-         <a href="#contact">CONTACT </a>
-       </div>
-      </nav>
-  </header>
-      
-    <section id="about">
-      <h3>About Me</h3>
-      
-        <image src="PortraitPhoto.jpg" id="facepic" height= 250px alt="face portrait">
-        <p>Hello, and welcome to my personal Portfolio! I am an entry-level web developer based in Orlando, FL. I am experienced in writing with HTML, CSS3, and JavaScript languages. I have successfully completed the Front-End Certification program with FreeCodeCamp and am continuing my education through various resources. I am a self-motivated and driven individual with a strong eye for detail.</p>
-    </section>
-      
-    <section id="skills">
-      <h3>My Skills</h3>
-          <ol id="fluentskills">
-            <li class="listedskill">
-              <figure>
-                <img height=150px src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="HTML">
-                </figure>
-              </li>
-            <li class="listedskill">
-              <figure>
-                  <img height=150px src="http://www.optimum7.com/wp-content/uploads/2013/04/CSS3.png" alt="CSS">
-                  </figure>
-                  </li>
-            <li class="listedskill">
-              <figure>
-                <img height=150px src="https://seeklogo.com/images/J/javascript-logo-E967E87D74-seeklogo.com.png" alt="JavaScript">
-                </figure>
-                </li>
-          </ol>
-    </section>
-           
-    
-      
-    <section id="contact">
-      <h3>Contact Me</h3>
-      <p><strong>E-Mail: </strong>Pooranpatel93@gmail.com</p>
-      <p><strong>Phone: </strong>(772)-501-3540</p>
-      <p><strong>LinkedIn: </strong></p>
-    </section>  
-      
-    <footer id="main-footer">&copy;2017 Vero Beach, FL        
-      </footer>
-      <button onclick="topFunction()" id="upBtn" title="Go to top">Back to Top</button>
-      
-  </body>
-     <script src="app.js"></script>
+<!-- Start Skills section-->
+		<div id="skills" class="container-fluid padding">
+			<h3 class="heading">What do I know?</h3>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="item text-center">
+						<img class="skill-img img-fluid" src="https://i.postimg.cc/P5yb6tNr/html_logo.png">
+						<p>HTML</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="text-center">
+						<img class="skill-img img-fluid" src="https://i.postimg.cc/2SrFFqkK/css_logo.png">
+						<p>CSS</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="text-center">
+						<img class="skill-img img-fluid" src="https://i.postimg.cc/nzzRJ3C7/javascript-logo.png">
+						<p>JavaScript</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="text-center">
+						<img class="skill-img img-fluid" src="https://i.postimg.cc/VkqXHXL8/bootstrap-stack.png">
+						<p>Bootstrap 4</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="item text-center">
+					<img class="skill-img img-fluid" src="https://i.postimg.cc/NF8p8Sn3/jquery-logo.png">
+						<p>jQuery</p>
+				</div>
+				</div>
+				<div class="col-md-4">
+					<div class="item text-center">
+					<img class="skill-img img-fluid" src="https://i.postimg.cc/VkNP6Wrf/php-logo.png">
+						<p>PHP</p>
+				</div>
+				</div>
+				<div class="col-md-4">
+					<div class="item text-center">
+					<img class="skill-img img-fluid" src="https://i.postimg.cc/NF8p8Sn3/jquery-logo.png">
+						<p>SQL/MySQL</p>
+				</div>
+				</div>
+			</div><!-- End row -->
+		</div>
+			<!-- End skills section-->
+			
+<!-- Start Portfolio Section -->
+	<div id="portfolio">
+		<div class="container-fluid padding">
+			<h3 class="heading">What have I made?</h3>
+			<div class="row no-padding">
+				<div class="col-md-6">
+					<a href="https://pooranp.github.io/WikipediaViewer/" target="_blank"><img class="portfolio portfolio-img" src="https://i.postimg.cc/dVBDZhtW/Wikipedia_Viewer_Screen.png"></a>
+				</div>
+				<div class="col-md-6">
+					<a href="https://pooranp.github.io/LocalWeatherApp/" target="_blank"><img class="portfolio portfolio-img" src="https://i.postimg.cc/jqpDpVFh/Local_Weather_App_Screen.png"></a>
+				</div>
+				<div class="col-md-6">
+					<img class="portfolio portfolio-img" src="https://i.postimg.cc/jqpDpVFh/Local_Weather_App_Screen.png">
+				</div>
+				<div class="col-md-6">
+					<img class="portfolio portfolio-img" src="https://i.postimg.cc/jqpDpVFh/Local_Weather_App_Screen.png">
+				</div>
+			</div> <!-- End row -->
+		</div> <!-- End container-fluid -->
+	</div> <!-- End Portfolio Section -->
+			
+<!-- Start Contact Section -->
+		<div id="contact">
+				<div class="row container-fluid footer padding" id="contact-2">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<h3 class="heading">Where can you reach me?</h3>
+						<p id="phone">Phone: (772)-501-3540</p>
+						<p>E-mail: pooranpatel93@gmail.com</p>
+						<div class="form" id="contact-form">
+<!-- 							<form action="mailto:pooranp464@gmail.com" method="post" enctype="text/plain">
+								Name:<br>
+								<input type="text" name="name" style="width: 100%"><br>
+								E-mail:<br>
+								<input type="text" name="mail" style="width: 100%"><br>
+								Comment:<br>
+								<textarea type="text" id="comment-box" name="comment" size="50" style="width: 100%; height: 200px"></textarea><br><br>
+								<input class="contact-btn" type="submit" value="Send">
+								<input class="contact-btn" type="reset" value="Reset">
+							</form> -->
+					</div>
+				</div> <!-- End row -->
+			</div> <!-- End container fluid footer -->
+		</div>
+		<!-- End Contact section -->
+		
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="run.js"></script>
+</body>
 </html>
