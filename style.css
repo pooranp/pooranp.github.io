@@ -1,155 +1,340 @@
-/*---element selectors---*/
-
 body {
-  background-image: url("https://wallpaperscraft.com/image/stars_night_sky_113967_1370x640.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  color: #fff;
-  overflow-x: hidden;
-  font-family: 'Questrial', sans-serif;
+	overflow-x: hidden;
+	color: rgb(80, 89, 98);
+	background: rgb(244, 235, 208);
 }
 
-header {
-  height: 300px;
-  text-align: center;
-  margin-bottom: 300px;
+.navbar {
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	padding-bottom: 0;
 }
 
-h1 {
-  padding: 180px 40px 100px;
-  font-size: 50px;
-  color: white;
+.navbar .nav-item {
+	margin: 0px 20px;
+	padding: 0px 20px;
+	border-style: none none solid none;
+	border-color: transparent;
+	border-width: 1px;
 }
 
-h3 {
-  padding: 40px 0px 20px;
-  margin: 80px 0px 50px;
-  font-weight: bold;
-  font-size: 40px;
+.navbar .nav-item:hover {
+	border-style: none none solid none;
+	border-color: rgba(255, 255, 255, 0.2);
+	border-width: 1px;
 }
 
-p {
-  padding: 10px;
-  width: 75%;
-  margin: auto;
-  text-align: justify;
-  font-size: 23px;
-  line-height: 2;
+.navbar-brand {
+	font-size: 1.8rem;
 }
 
-section {
-  width: 100%;
+.home-inner {
+	background-image: url('https://i.postimg.cc/CLQSrrSg/mountain-sunrise.jpg');
 }
 
-img {
-  max-width: 100%;
+@keyframes appear {
+  from{
+    color: rgba(255, 255, 255, 0);
+	top: 50%;
+  }
 }
 
-#navbar {
-    display: inline;
-    width: 100%;
-    margin: 0px;
-    text-decoration: none;
+.caption {
+	animation: appear 3s;
+	width: 100%;
+	max-width: 100%;
+	color: rgba(255, 255, 255, 1);
+	position: absolute;
+	top: 20%;
+	z-index: 1;
 }
 
-#fluentskills {
-  text-align: center;
-  display: inline;
-    width: 75%;
+.caption h3 {
+	text-transform: uppercase;
+	line-height: 2.5rem;
+	text-align: left;
+	font-size: 2.5rem;
+	padding: 0 3rem 2rem;
 }
 
-
-.listedskill {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0% 5%;
-  width: 20%;
+.caption h3 strong {
+	font-size: 3.2rem;
 }
 
-a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 0% 10%;
-    display: inline;
+.btn {
+	border-width: 1px;
+	border-radius: 0;
+	padding: 0.2rem 2rem 0.5rem;
+	margin: 9rem;
+	top: 50%;
+	font-size: 2rem;
+	border-color: rgba(255, 255, 255, 0.2);
 }
 
-
-nav a:hover {
-  background-color: #;
-  color: rgba(255, 255, 255);
-  border-bottom-style: solid;
-  border-bottom-color: white;
-  border-bottom-width: 1px;
+.btn:hover {
+	color: rgba(0, 0, 0, 1);
+	background: rgba(255, 255, 255, 0.7);
 }
 
-/*---id selectors---*/
-
-#main-footer {
-  color: white;
-  padding: 10px;
-  background-color: rgba(0,0,0,0.3);
+@keyframes flash {  
+    0% { opacity: 0.7;}
+    80% { opacity: 0.1;}
+    100% { opacity: 0.7;}
 }
 
-#backToTop.sticky {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-    font-size: 18px;
+#homeBtn {
+	animation: flash 2s infinite;
+    display: none;
+	border-style: hidden;
+    position: fixed;
+    bottom: 1px;
+    right: 15px;
+    z-index: 99;
+    border-radius: 50px 50px 0 0;
+	color: rgba(0, 0, 0, 1);
+	background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+	padding: 0.2rem 1.7rem 0.5rem;
+    font-size: 2rem;
+}
+
+#homeBtn:hover {
+	color: rgba(255, 255, 255, 1);
+	background: rgba(0, 0, 0, 0.3); /* Add a dark-grey background on hover */
+}
+
+h3.heading {
+	text-align: center;
+	font-size: 1.9rem;
+	text-transform: uppercase;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
 }
 
 #about {
-  text-align: center;
-  background-color: rgba(0,0,0,0.3);
-  padding-bottom: 40px;
-  overflow: auto;
+	margin: 0;
+	padding: 3rem 0 5rem;
 }
 
-#facepic {
-  display: inline-block;
-  height: 350px;
-  float: right;
-  margin: 0px 100px;
-  border-radius: 50px;
+#about-text {
+	padding-right: 20px;
+}
+
+#portrait-img {
+	background: rgba(255, 255, 255, 0);
+	border-radius: 15% 0 0 15%;
+	padding: 0;
+	width: 70vw;
+}
+
+.text {
+	font-size: 2vw;
+	text-align: justify;
+}
+
+.padding {
+	padding: 1rem 0;
+}
+
+img.portfolio {
+	max-width: 100%;
+}
+
+.no-padding .col-md-6{
+	padding: 0;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-img {
+	margin: 3rem auto 0;
+	border-style: hidden;
+	max-width: 50%;
 }
 
 #skills {
-  text-align: center;
-  background-color: rgba(0,0,0,0.3);
-  padding-bottom: 40px;
+	padding: 1rem 5rem 5rem;
+	background: rgb(244, 235, 208);
+}
+
+#portfolio {
+	padding: 1rem 5rem 5rem;
+	background: rgb(210, 192, 165)
+}
+
+#skills, #portfolio {
+	border-top-style: solid;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.05);
 }
 
 #contact {
-  text-align: center;
-  background-color: rgba(0,0,0,0.3);
-  padding-bottom: 40px;
+	padding-top: 20px;
 }
 
-/*---pseudo-class selectors---*/
-
-a:link {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  padding-bottom: 20px;
+#contact-2 {
+	margin: -20px 0;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
-a:visited {
-  color: white;
+#contact-form {
+	text-align: center;
 }
 
-#upBtn {
-    display: none;
-    position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
+.contact-btn {
+	background-color: rgba(0, 0, 0, 0.4);
+	text-transform: uppercase;
+	cursor: pointer;
     border: none;
-    outline: none; 
-    background: none;
     color: white;
-    cursor: pointer;
-    padding: 15px;
+    padding: 15px 40px;
+	margin: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
 }
 
-/*---class selectors---*/
+
+.footer .row {
+	background-color: rgb(80, 89, 98);
+	padding: 1rem 2rem 3rem;
+	color: white;
+}
+
+.footer img {
+	height: 2rem;
+	margin: 1.5rem 0;
+}
+
+/*--- iOS Landing Page Fix --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: #E9ECEF;
+  z-index: -1;
+}
+
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Media Query */
+@media only screen and (max-width: 738px) {
+	
+	.home-inner {
+		filter: brightness(60%);
+		background-image: url('https://i.postimg.cc/CLQSrrSg/mountain-sunrise.jpg');
+	}
+	
+	.row {
+/* 		set padding/margin to prevent horizontal scrolling */
+		padding-right: 0;
+		margin-right: 0;
+	}
+	
+	.navbar {
+		max-width: 100%;
+		position: absolute;
+		padding: 10px;
+		background: rgba(0,0,0,1);
+	}
+	
+	.navbar .nav-item {
+		margin: 0px 20px;
+		padding: 25px 20px;
+		text-align: center;
+	}
+	
+	.navbar #menu {
+		height: 100vh;
+		font-size: 30px;
+		background-color: rgba(0, 0, 0, 1);
+	}
+	
+	nav.foo {
+		display: block;
+	}
+	
+	.caption {
+		width: 100%;
+		text-transform: uppercase;
+		max-width: 100%;
+		font-weight: bold;
+		position: absolute;
+		top: 15%;
+		z-index: 1;
+	}
+	
+	@keyframes clarify {
+	    from {filter: blur(5px);}
+		to {filter: blur(0px);}
+	}
+	
+	.caption h3 {
+		color: rgba(255, 255, 255, 0.9);
+		animation: clarify 1.5s;
+		animation-timing-function: ease-out;
+		padding: 0 0.2rem 0;
+		font-size: 1.7rem;
+		text-align: left;
+	}
+	
+	.caption h3 strong {
+		font-size: 2.4rem;
+	}
+	
+	#line1 {
+		line-height: 0;
+	}
+	
+	#welcome-cap {
+		margin-top: 5rem;
+	}
+	
+	.btn {
+		display: none;
+	}
+		
+	#homeBtn, #homeBtn:hover {
+		display: none !important;
+		position: fixed;
+		bottom: 20px;
+		border: none;
+		outline: none;
+		color: black;
+		padding: 0;
+		border-radius: 100%;
+		font-size: 1.3rem;
+		background: none;
+	}
+
+	#portrait-img {
+		display: none;
+	}
+}
+
+@media screen and (max-height: 650px){ 
+  .downBtn{
+    display: none;
+  }
+}
