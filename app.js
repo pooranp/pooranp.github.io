@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var win = $(window);
+	var win = $(html);
 	
 	var homeBtn = $("#homeBtn");
 	win.scroll(function() {
