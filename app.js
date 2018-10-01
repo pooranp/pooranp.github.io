@@ -77,7 +77,7 @@ $('a[href*="#"]')
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
-        win.animate({
+        $("html", "body").animate({
           scrollTop: target.offset().top
         }, 350, function() {
           // Callback after animation
