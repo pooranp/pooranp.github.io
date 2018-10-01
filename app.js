@@ -2,7 +2,7 @@ $(document).ready(function(){
 	var win = $('html, body');
 	
 	var homeBtn = $("#homeBtn");
-	win.scroll(function() {
+	$('html, body').scroll(function() {
 		if ($(this).scrollTop() >= 60){
 		homeBtn.css("display", "block");
 		} else {
@@ -10,13 +10,13 @@ $(document).ready(function(){
 		};
 	});
 	homeBtn.click(function() {
-		win.scrollTo({
+		$('html, body').scrollTo({
 			top: 0,
 			behavior: "smooth"
 		});
 	}); //End Scroll-Home button
 	
-	if (win.height() <= 500) {
+	if ($('html, body').height() <= 500) {
 		console.log('small');
 	};
 	
@@ -25,8 +25,8 @@ $(document).ready(function(){
 	var navbar = $(".navbar");
 	
 	// Scroll Function
-	win.scroll(function() {
-    if (toggler.is(":hidden") && win.scrollTop() >= distance - navbar.height()*1.85) {
+	$('html, body').scroll(function() {
+    if (toggler.is(":hidden") && $('html, body').scrollTop() >= distance - navbar.height()*1.85) {
 		navbar
 			.removeClass("navbar-dark")
 			.addClass("navbar-light")
@@ -51,8 +51,8 @@ $(document).ready(function(){
 			menu.slideUp('fast');
 		};
 		
-		win.scroll(function() {
-			if (win.scrollTop() >= 2) {
+		$('html, body').scroll(function() {
+			if ($('html, body').scrollTop() >= 2) {
 				menu.slideUp('fast');
 			}
 		});		
