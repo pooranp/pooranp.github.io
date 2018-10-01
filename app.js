@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var win = $(window, "html", "body");
+	var win = $(window);
 	
 	var homeBtn = $("#homeBtn");
 	win.scroll(function() {
@@ -10,7 +10,7 @@ $(document).ready(function(){
 		};
 	});
 	homeBtn.click(function() {
-		win.scrollTo({
+		window.scrollTo({
 			top: 0,
 			behavior: "smooth"
 		});
@@ -77,7 +77,7 @@ $('a[href*="#"]')
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
-        $("html", "body").animate({
+        $('html, body').animate({
           scrollTop: target.offset().top
         }, 350, function() {
           // Callback after animation
