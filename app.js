@@ -10,7 +10,7 @@ $(document).ready(function(){
 		};
 	});
 	homeBtn.click(function() {
-		window.scrollTo({
+		win.scrollTo({
 			top: 0,
 			behavior: "smooth"
 		});
