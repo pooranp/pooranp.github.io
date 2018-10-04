@@ -120,6 +120,7 @@ h3.heading {
 #about-text {
 	padding-right: 20px;
 	color: #25232e;
+	text-align: justify;
 }
 
 #portrait-img {
