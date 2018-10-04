@@ -120,9 +120,12 @@ h3.heading {
 }
 
 #about-text {
-	padding-right: 20px;
+	padding-right: 40px;
+	text-align: justify; 
 	color: #25232e;
-	text-align: justify;
+	line-height: 3.2rem;
+	padding-left: 80px;
+	padding-top: 20px;
 }
 
 #portrait-img {
