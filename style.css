@@ -109,6 +109,8 @@ h3.heading {
 	text-transform: uppercase;
 	margin-top: 3rem;
 	margin-bottom: 2rem;
+	text-decoration: underline;
+	text-decoration-color: rgba(37, 35, 46, 0.4);
 }
 
 #about {
