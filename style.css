@@ -113,11 +113,13 @@ h3.heading {
 
 #about {
 	margin: 0;
+	color: #25232e;
 	padding: 3rem 0 5rem;
 }
 
 #about-text {
 	padding-right: 20px;
+	color: #25232e;
 }
 
 #portrait-img {
@@ -158,11 +160,12 @@ img.portfolio {
 
 #portfolio {
 	padding: 1rem 5rem 5rem;
-	background: rgb(210, 192, 165)
+	background: rgb(210, 192, 165);
 }
 
 #skills, #portfolio {
 	border-top-style: solid;
+	color: #25232e;
 	border-width: 1px;
 	border-color: rgba(0, 0, 0, 0.05);
 }
@@ -173,7 +176,8 @@ img.portfolio {
 
 #contact-2 {
 	margin: -20px 0;
-	background-color: rgba(0, 0, 0, 0.2);
+	color: white;
+	background-color: #25232e;
 }
 
 #contact-form {
